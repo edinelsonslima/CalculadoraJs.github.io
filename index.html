@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="centralizar">
+        <div class="container">
+            <input type="text" class="screen" id="tela" value=""readonly>
+                <div class="buttons">
+                    <div class="numbers">
+                        <input class="button"  type="button" value="7" id="sete">  
+                        <input class="button"  type="button" value="8" id="oito">  
+                        <input class="button"  type="button" value="9" id="nove">  
+                        <input class="button"  type="button" value="4" id="quatro">
+                        <input class="button"  type="button" value="5" id="cinco"> 
+                        <input class="button"  type="button" value="6" id="seis">  
+                        <input class="button"  type="button" value="1" id="um">    
+                        <input class="button"  type="button" value="2" id="dois">  
+                        <input class="button"  type="button" value="3" id="tres">  
+                        <input class="button"  type="button" value="0" id="zero">  
+                    </div>
+                    <div class="op">
+                        <input class="button" type="button" value="+" id="add" onclick="somar()">
+                        <input class="button" type="button" value="-" id="sub" onclick="subtracao()">
+                        <input class="button" type="button" value="*" id="mult"onclick="multiplicacao()">
+                        <input class="button" type="button" value="/" id="div" onclick="divisao()">
+                    </div>
+                    <div class="ic">
+                        <input class="button" type="button" value="Clean" id="clean" onclick="clean()">
+                        <input class="button" type="button" value="=" id="igual" onclick="resultado()">
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <strong>&copy; Edinelson Lima</strong>
+        <script src="js/index.js"></script>
+    </footer>
+</body>
+</html>

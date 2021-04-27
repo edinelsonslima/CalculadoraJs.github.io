@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.centralizar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    box-shadow: 10px 10px rgb(128, 128, 128);
+    border-radius: 20px;
+    background: rgb(46, 46, 46);
+    width: 50%;
+    height: 70%;  
+}
+
+.screen{
+    border-radius: 10px;
+    background: white;
+    color: black;
+    height: 15%;
+    width: 90%;
+    margin: 5%;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.op{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 25%;
+}
+
+.ic{
+
+    margin:0px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+}
+
+.button{
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    margin:7px;
+    height: 19%;
+    width: 26%;
+    align-items: center;
+    position: relative;
+    
+    color:white;
+    font-size: 2rem;
+} 
+
+#tela{
+    font-size:40px;;
+    text-align: right;
+}
+
+#igual{
+    width: 60%;
+    font-size: 350%;
+    text-align: center;
+}
+
+#clean{
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+#add{
+    width: 70%;
+    font-size: 230%;
+    text-align: center;
+
+}
+
+#div{
+    width: 70%;
+    font-size: 230%;
+    text-align: center;
+}
+
+#mult{
+    width: 70%;
+    font-size: 230%;
+    text-align: center;
+}
+
+#sub{
+    width: 70%;
+    font-size: 230%;
+    text-align: center;
+}
+
+@media(min-width:1020px){
+    .container{
+        box-shadow: 10px 10px rgb(128, 128, 128);
+        border-radius: 20px;
+        background: rgb(46, 46, 46);
+        width: 20%;
+        height: 65%;  
+    }
+}
+
+@media(max-width:900px){
+    .container{
+        box-shadow: 10px 10px rgb(128, 128, 128);
+        border-radius: 20px;
+        background: rgb(46, 46, 46);
+        width: 80%;
+        height: 80%;  
+    }
+}
