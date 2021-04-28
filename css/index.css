@@ -11,9 +11,9 @@ body{
 footer{
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 40px;
     position: absolute;
-    top: 0;
+    bottom: 0;
 }
 
 .centralizar{
