@@ -18,7 +18,7 @@ footer{
 
 .centralizar{
     width: 100vw;
-    height: 100vh;
+    height: 86vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -147,22 +147,32 @@ footer{
     text-align: center;
 }
 
-@media(min-width:1020px){
+@media(max-width:2000px){
     .container{
         box-shadow: 10px 10px rgb(128, 128, 128);
         border-radius: 20px;
         background: rgb(46, 46, 46);
-        width: 20%;
-        height: 65%;  
+        width: 60%;
+        height: 90%;  
     }
 }
 
-@media(max-width:900px){
+@media(min-width:1024px){
     .container{
         box-shadow: 10px 10px rgb(128, 128, 128);
         border-radius: 20px;
         background: rgb(46, 46, 46);
-        width: 58%;
-        height: 75%;  
-    }
+        width: 50%;
+        height: 98%; 
+    } 
+}
+
+@media(max-width:500px) {
+    .container{
+        box-shadow: 10px 10px rgb(128, 128, 128);
+        border-radius: 20px;
+        background: rgb(46, 46, 46);
+        width: 98%;
+        height: 100%; 
+    } 
 }
