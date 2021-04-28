@@ -35,12 +35,13 @@ footer{
 }
 
 .screen{
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px; 
+    border: none;
     background: white;
     color: black;
-    height: 15%;
+    height: 10%;
     width: 90%;
-    margin: 5%;
+    margin: 3% 0% 0% 5%;
 }
 
 .buttons{
@@ -97,7 +98,14 @@ footer{
 } 
 
 #tela{
-    font-size:40px;;
+    font-size:35px;
+    text-align: right;
+}
+
+#telaSecundaria{
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: -25px;
+    font-size:40px;
     text-align: right;
 }
 
@@ -154,7 +162,7 @@ footer{
         box-shadow: 10px 10px rgb(128, 128, 128);
         border-radius: 20px;
         background: rgb(46, 46, 46);
-        width: 80%;
-        height: 80%;  
+        width: 58%;
+        height: 75%;  
     }
 }

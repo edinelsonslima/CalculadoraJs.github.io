@@ -12,6 +12,8 @@ const nove = document.querySelector('#nove')
 
 /*Pegando a tela*/
 const tela = document.querySelector('#tela')
+const telaSecundaria = document.querySelector('#telaSecundaria')
+
 
 /*Variaveis nescessarias*/
 let primerioValor, segundoValor, operador
@@ -21,18 +23,22 @@ function resultado(){
     console.log(primerioValor)
     if(operador == 'somar'){
         segundoValor = Number(tela.value)
+        telaSecundaria.value += segundoValor
         tela.value = primerioValor + segundoValor
     }
     else if(operador == 'subtrair'){
         segundoValor = Number(tela.value)
+        telaSecundaria.value += segundoValor
         tela.value = primerioValor - segundoValor
     }
     else if(operador == 'multiplicar'){
         segundoValor = Number(tela.value)
+        telaSecundaria.value += segundoValor
         tela.value = primerioValor * segundoValor
     }
     else if(operador == 'dividir'){
         segundoValor = Number(tela.value)
+        telaSecundaria.value += segundoValor
         tela.value = primerioValor / segundoValor
     }
 }
@@ -41,30 +47,35 @@ function resultado(){
 function somar(){
     primerioValor = Number(tela.value)
     operador = 'somar'
+    telaSecundaria.value = `${primerioValor} + `
     tela.value = " " 
 }
 
 function subtracao(){
     primerioValor = Number(tela.value)
     operador = 'subtrair'
+    telaSecundaria.value = `${primerioValor} - `
     tela.value = " " 
 }
 
 function multiplicacao(){
     primerioValor = Number(tela.value)
     operador = 'multiplicar'
+    telaSecundaria.value = `${primerioValor} x `
     tela.value = " " 
 }
 
 function divisao(){
     primerioValor = Number(tela.value)
     operador = 'dividir'
+    telaSecundaria.value = `${primerioValor} ÷ `
     tela.value = " " 
 }
 
 /*Limpando a tela*/
 function clean(){
     tela.value = ''
+    telaSecundaria.value = ''
 }
 
 /*Adicionando o clique do botão na tela*/
