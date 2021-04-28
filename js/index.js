@@ -10,6 +10,8 @@ const sete = document.querySelector('#sete')
 const oito = document.querySelector('#oito')
 const nove = document.querySelector('#nove')
 
+const igual = document.querySelector('#igual')
+
 /*Pegando a tela*/
 const tela = document.querySelector('#tela')
 const telaSecundaria = document.querySelector('#telaSecundaria')
@@ -22,36 +24,43 @@ let primerioValor, segundoValor, operador
 function resultado(){
     console.log(primerioValor)
     if(operador == 'somar'){
+        igual.disabled = true
         segundoValor = Number(tela.value)
-        telaSecundaria.value += segundoValor
+        telaSecundaria.value += `${segundoValor}`
         tela.value = primerioValor + segundoValor
     }
     else if(operador == 'subtrair'){
+        igual.disabled =true
         segundoValor = Number(tela.value)
         telaSecundaria.value += segundoValor
-        tela.value = primerioValor - segundoValor
+        tela.value = (primerioValor - segundoValor)
     }
     else if(operador == 'multiplicar'){
+        igual.disabled =true
         segundoValor = Number(tela.value)
         telaSecundaria.value += segundoValor
         tela.value = primerioValor * segundoValor
     }
     else if(operador == 'dividir'){
+        igual.disabled =true
         segundoValor = Number(tela.value)
         telaSecundaria.value += segundoValor
-        tela.value = primerioValor / segundoValor
+        tela.value = (primerioValor / segundoValor).toFixed(2)
     }
 }
 
 /*Pegando o valor da tela e armazenando no primeiroValor*/
 function somar(){
+    igual.disabled = false
     primerioValor = Number(tela.value)
     operador = 'somar'
     telaSecundaria.value = `${primerioValor} + `
     tela.value = " " 
+
 }
 
 function subtracao(){
+    igual.disabled = false
     primerioValor = Number(tela.value)
     operador = 'subtrair'
     telaSecundaria.value = `${primerioValor} - `
@@ -59,6 +68,7 @@ function subtracao(){
 }
 
 function multiplicacao(){
+    igual.disabled = false
     primerioValor = Number(tela.value)
     operador = 'multiplicar'
     telaSecundaria.value = `${primerioValor} x `
@@ -66,6 +76,7 @@ function multiplicacao(){
 }
 
 function divisao(){
+    igual.disabled = false
     primerioValor = Number(tela.value)
     operador = 'dividir'
     telaSecundaria.value = `${primerioValor} ÷ `
@@ -76,6 +87,7 @@ function divisao(){
 function clean(){
     tela.value = ''
     telaSecundaria.value = ''
+    igual.disabled = false
 }
 
 /*Adicionando o clique do botão na tela*/
